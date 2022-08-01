@@ -162,7 +162,9 @@ body {
   align-items: center;
 }
 
-.phone-number {
+.connection-link {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -170,33 +172,21 @@ body {
   color: var(--color-text-main);
 }
 
-.phone-number:hover,
-.phone-number:focus {
+.connection-link:hover,
+.connection-link:focus {
   color: var(--color-menu-link-hover);
 }
-
-.mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.33;
-  letter-spacing: 0.02em;
-  color: var(--color-text-main);
-}
-/* .mail::backdrop {
-  content: '--';
-} */
 
 .connection-icon {
   margin-right: 10px;
-  align-items: center;
-  color: red;
+  color: #757575;
+}
+
+.connection-link:hover > .connection-icon,
+.connection-link:focus > .connection-icon {
+  fill: currentColor;
 }
 /* ==========START PORTFOLIO========== */
-
-.mail:hover,
-.mail:focus {
-  color: var(--color-menu-link-hover);
-}
 
 /* ==================main============ */
 
@@ -384,6 +374,10 @@ body {
   margin: 0 auto; */
 }
 
+.social-list-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
 .social-list-icon {
   fill: var(--color-fill-icon);
 }
@@ -443,11 +437,11 @@ body {
   margin-top: 20px;
 }
 
-.adress-item {
+/* .adress-item {
   margin-bottom: 9px;
-}
-.adress-item:last-child {
-  margin-bottom: 0px;
+} */
+.adress-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-address {
